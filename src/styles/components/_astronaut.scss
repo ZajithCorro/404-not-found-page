@@ -1,0 +1,26 @@
+.box-astronaut {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  will-change: transform;
+  animation: move-astronaut 50s infinite linear both alternate;
+
+  img {
+    width: 150px;
+    animation: rotate-astronaut 200s infinite linear both alternate;
+  }
+
+  @keyframes rotate-astronaut {
+    100% {
+      -webkit-transform: rotate(-720deg);
+      transform: rotate(-720deg);
+    }
+  }
+
+  @keyframes move-astronaut {
+    100% {
+      -webkit-transform: translate(-100px, -100px);
+      transform: translate(-100px, -100px);
+    }
+  }
+}

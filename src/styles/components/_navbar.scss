@@ -1,0 +1,37 @@
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+
+  ul {
+    display: none;
+  }
+
+  @media screen and (min-width: 420px) {
+    font-size: 1rem;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 0.5rem 0.75rem;
+      }
+
+      li::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: var(--white);
+        transition: width 0.3s;
+      }
+
+      li:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}

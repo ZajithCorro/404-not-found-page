@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('../assets/overlay_stars.svg') left top repeat,
+    linear-gradient(to right bottom, #a9347e, #4b32a7);
+  background-size: 400px, auto;
+  color: var(--white);
+  font-family: Space Mono, monospace;
+  height: 100vh;
+  width: 100vw;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  margin-top: 80px;
+}
